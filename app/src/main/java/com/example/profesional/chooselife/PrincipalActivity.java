@@ -26,7 +26,6 @@ public class PrincipalActivity extends AppCompatActivity implements NavigationVi
     NavigationView navigationView;
     DrawerLayout drawer;
     ActionBarDrawerToggle toggle;
-    ImageView imgUser;
     Toolbar toolbar;
 
     //Fragments
@@ -48,7 +47,6 @@ public class PrincipalActivity extends AppCompatActivity implements NavigationVi
         //Obtener Views
         navigationView = (NavigationView) findViewById(R.id.navigation_view);
         navigationView.setNavigationItemSelectedListener(this);
-        imgUser = (ImageView) navigationView.findViewById(R.id.img_user_drawer);
 
         //toolbar
         toolbar = (Toolbar) findViewById(R.id.toolbar);
