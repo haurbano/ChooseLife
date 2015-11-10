@@ -5,23 +5,26 @@
     android:layout_height="150dp">
 
     <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="#555555"
+        />
+
+    <ImageView
+        android:id="@+id/img_fondo"
         android:background="@drawable/img_fondo_drawer_header"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
-
-    <ImageView
-        android:layout_centerVertical="true"
-        android:id="@+id/img_user_drawer"
-        android:layout_margin="20dp"
-        android:layout_width="100dp"
-        android:layout_height="100dp" />
     <TextView
         android:textColor="#ffffff"
         android:textSize="26sp"
         android:text="Ana Maria Orozco"
-        android:layout_alignBottom="@id/img_user_drawer"
-        android:layout_toRightOf="@id/img_user_drawer"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_small"
+        android:background="#ab484848"
+        android:gravity="end"/>
 
 </RelativeLayout>

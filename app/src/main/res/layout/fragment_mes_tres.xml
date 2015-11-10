@@ -1,10 +1,500 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.profesional.chooselife.fragments.fragmentSecundarios.MesTresFragment">
+<ScrollView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.profesional.chooselife.fragments.fragmentSecundarios.ConfirmadoFragment">
 
-</FrameLayout>
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            android:layout_margin="@dimen/margin_small">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/img_conductor2"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/conductor3"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="centerCrop"
+                    android:layout_centerVertical="true"/>
+
+
+                <TextView
+                    android:id="@+id/text_nombre_conductor2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/img_conductor2"
+                    android:text="Juan Gómez"
+                    android:textSize="@dimen/title_size"
+                    android:layout_marginTop="3dp"/>
+
+                <LinearLayout
+                    android:id="@+id/ln_id2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/text_nombre_conductor2"
+                    android:layout_toRightOf="@id/img_conductor2"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_identificaion_black"
+                        android:layout_marginRight="@dimen/margin_small"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1061756690"
+                        android:textSize="@dimen/text_size"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ln_localizacion2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/ln_id2"
+                    android:layout_toRightOf="@id/img_conductor2"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_location_on_black_24dp"
+                        android:layout_marginRight="@dimen/margin_small"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Corona VIP"
+                        android:textSize="@dimen/text_size"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ln_fecha2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/ln_localizacion2"
+                    android:layout_toRightOf="@id/img_conductor2"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:src="@drawable/ic_today_black_24dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14 Noviembre 2015"
+                        android:textSize="@dimen/text_size"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ln_hora2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/ln_fecha2"
+                    android:layout_toRightOf="@id/img_conductor2"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:src="@drawable/ic_access_time_black_24dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5:00 am"
+                        android:textSize="@dimen/text_size"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ln_marca2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/ln_hora2"
+                    android:layout_toRightOf="@id/img_conductor2"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:src="@drawable/ic_drive_eta_black_24dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Toyota Prado"
+                        android:textSize="@dimen/text_size"/>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            android:layout_marginRight="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/margin_small">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/img_conductor"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/conductor4"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="centerCrop"
+                    android:layout_centerVertical="true"/>
+
+
+                <TextView
+                    android:id="@+id/text_nombre_conductor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/img_conductor"
+                    android:text="Zac Efron"
+                    android:textSize="@dimen/title_size"
+                    android:layout_marginTop="3dp"/>
+
+                <LinearLayout
+                    android:id="@+id/ln_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/text_nombre_conductor"
+                    android:layout_toRightOf="@id/img_conductor"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_identificaion_black"
+                        android:layout_marginRight="@dimen/margin_small"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1432656690"
+                        android:textSize="@dimen/text_size"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ln_localizacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/ln_id"
+                    android:layout_toRightOf="@id/img_conductor"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_location_on_black_24dp"
+                        android:layout_marginRight="@dimen/margin_small"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Carrera 109 # 13-4"
+                        android:textSize="@dimen/text_size"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ln_fecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/ln_localizacion"
+                    android:layout_toRightOf="@id/img_conductor"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:src="@drawable/ic_today_black_24dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="17 Noviembre 2015"
+                        android:textSize="@dimen/text_size"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ln_hora"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/ln_fecha"
+                    android:layout_toRightOf="@id/img_conductor"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:src="@drawable/ic_access_time_black_24dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6:00 pm"
+                        android:textSize="@dimen/text_size"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ln_marca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/ln_hora"
+                    android:layout_toRightOf="@id/img_conductor"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:src="@drawable/ic_drive_eta_black_24dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Audi A4"
+                        android:textSize="@dimen/text_size"/>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            android:layout_margin="@dimen/margin_small">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/img_conductor3"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/conductor"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="centerCrop"
+                    android:layout_centerVertical="true"/>
+
+
+                <TextView
+                    android:id="@+id/text_nombre_conductor3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/img_conductor3"
+                    android:text="Pablo Muñoz"
+                    android:textSize="@dimen/title_size"
+                    android:layout_marginTop="3dp"/>
+
+                <LinearLayout
+                    android:id="@+id/ln_id3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/text_nombre_conductor3"
+                    android:layout_toRightOf="@id/img_conductor3"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_identificaion_black"
+                        android:layout_marginRight="@dimen/margin_small"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1432658700"
+                        android:textSize="@dimen/text_size"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ln_localizacion3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/ln_id3"
+                    android:layout_toRightOf="@id/img_conductor3"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_location_on_black_24dp"
+                        android:layout_marginRight="@dimen/margin_small"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Asturias, Casa 34"
+                        android:textSize="@dimen/text_size"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ln_fecha3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/ln_localizacion3"
+                    android:layout_toRightOf="@id/img_conductor3"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:src="@drawable/ic_today_black_24dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15 Noviembre 2015"
+                        android:textSize="@dimen/text_size"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ln_hora3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/ln_fecha3"
+                    android:layout_toRightOf="@id/img_conductor3"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:src="@drawable/ic_access_time_black_24dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3:00 am"
+                        android:textSize="@dimen/text_size"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ln_marca3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/ln_hora3"
+                    android:layout_toRightOf="@id/img_conductor3"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:src="@drawable/ic_drive_eta_black_24dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kia Sorento"
+                        android:textSize="@dimen/text_size"/>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
+

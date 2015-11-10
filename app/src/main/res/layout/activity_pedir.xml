@@ -9,11 +9,13 @@
     android:layout_margin="15dp">
 
     <LinearLayout
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <ImageView
+            android:src="@drawable/ic_location_on_black_24dp"
             android:layout_width="24dp"
             android:layout_height="24dp" />
 
@@ -34,23 +36,6 @@
         </android.support.design.widget.TextInputLayout>
     </LinearLayout>
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/input_pedir_telefono"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-
-        <EditText
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Telefono"
-            android:textColorHint="#ffffff"
-            android:inputType="number"
-            />
-    </android.support.design.widget.TextInputLayout>
-
-
     <LinearLayout
         android:orientation="horizontal"
         android:gravity="center"
@@ -58,25 +43,112 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:onClick="showDialogHora"
+            android:src="@drawable/ic_phone_black_24dp"
             android:layout_width="24dp"
             android:layout_height="24dp" />
 
-        <TextView
-            android:textColor="@color/primary"
-            android:textSize="21sp"
-            android:gravity="center"
-            android:onClick="showDialogHora"
-            android:text="Hora:"
-            android:layout_width="55dp"
-            android:layout_height="wrap_content"/>
-        <TextView
-            android:textSize="21sp"
-            android:text=" "
-            android:id="@+id/txt_hora"
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_pedir_telefono"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            >
 
+            <EditText
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Telefono"
+                android:textColorHint="#ffffff"
+                android:inputType="number"
+                />
+        </android.support.design.widget.TextInputLayout>
     </LinearLayout>
 
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="5dp">
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/ic_access_time_black_24dp"
+                    android:onClick="showDialogHora"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/primary"
+                    android:textSize="21sp"
+                    android:gravity="center"
+                    android:onClick="showDialogHora"
+                    android:text="Hora:"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="21sp"
+                    android:text=" "
+                    android:onClick="showDialogHora"
+                    android:id="@+id/txt_hora"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="5dp">
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_access_time_black_24dp"
+                android:onClick="showDialogFecha"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/primary"
+                android:textSize="21sp"
+                android:gravity="center"
+                android:onClick="showDialogFecha"
+                android:text="Fecha:"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="21sp"
+                android:text=" "
+                android:onClick="showDialogFecha"
+                android:id="@+id/txt_fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:onClick="pedirConductor"
+        app:theme="@style/ButtonAccent"
+        android:text="Solicitar Conductor"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>

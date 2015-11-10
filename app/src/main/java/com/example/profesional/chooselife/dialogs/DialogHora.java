@@ -9,6 +9,7 @@ import android.util.Log;
 import android.widget.TimePicker;
 
 import com.example.profesional.chooselife.PedirActivity;
+import com.example.profesional.chooselife.R;
 
 import java.util.Calendar;
 
@@ -24,7 +25,7 @@ public class DialogHora extends DialogFragment implements TimePickerDialog.OnTim
         Calendar c =  Calendar.getInstance();
         int hora = c.get(Calendar.HOUR_OF_DAY);
         int min = c.get(Calendar.MINUTE);
-        return new TimePickerDialog(getActivity(),this,hora,min,true);
+        return new TimePickerDialog(getActivity(), R.style.AppTheme,this,hora,min,true);
     }
 
     @Override
