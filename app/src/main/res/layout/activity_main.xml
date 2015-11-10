@@ -1,0 +1,153 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:src="@drawable/logo_gray"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="Choose Life"
+        android:textColor="@color/primary"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        >
+
+        <ImageView android:layout_height="36dp"
+            android:layout_width="36dp"
+            android:src="@drawable/ic_account_circle_black_24dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre"
+                android:textColorHint="#ffffff"
+                android:inputType="text"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <ImageView android:layout_height="36dp"
+            android:layout_width="36dp"
+            android:src="@drawable/ic_lock_black_24dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:textColorHint="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña Choose Life"
+                android:inputType="textPassword"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+
+        >
+        <Button
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:id="@+id/btn_registro"
+            android:layout_height="wrap_content"
+            android:text="Regístrate"
+            android:textColor="@color/primary"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"/>
+        <Button
+            app:theme="@style/ButtonAccent"
+            android:id="@+id/btn_entrar"
+            android:layout_height="wrap_content"
+            android:text="Ingresar"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+        <Button
+            app:theme="@style/ButtonGooglePlus"
+            android:id="@+id/btn_google_plus"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ingresar con Google +"
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/ic_google_plus"
+            android:drawablePadding="@dimen/margin_small"/>
+
+
+        <Button
+            app:theme="@style/ButtonFacebook"
+            android:id="@+id/btn_facebook"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ingresar con Facebook"
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/ic_facebook_23"
+            android:drawablePadding="@dimen/margin_small"/>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

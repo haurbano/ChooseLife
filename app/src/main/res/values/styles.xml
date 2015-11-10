@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ButtonAccent" parent="Widget.AppCompat.Button">
+        <item name="colorControlHighlight">@color/primaryDark</item>
+        <item name="colorButtonNormal">@color/primary</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="ButtonAccentDark" parent="Widget.AppCompat.Button">
+        <item name="colorControlHighlight">#434343</item>
+        <item name="colorButtonNormal">#5D5D5D</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="ButtonFacebook" parent="Widget.AppCompat.Button">
+        <item name="colorControlHighlight">#2c4271</item>
+        <item name="colorButtonNormal">#2f54a3</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ButtonGooglePlus" parent="Widget.AppCompat.Button">
+        <item name="colorControlHighlight">#f42d14</item>
+        <item name="colorButtonNormal">#d34836</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+</resources>
+

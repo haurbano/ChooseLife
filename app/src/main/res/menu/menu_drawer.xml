@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/opcion_home_drawer"
+        android:title="Inicio"
+        android:icon="@drawable/ic_home_black_24dp"/>
+
+    <item android:id="@+id/opcino_historial_drawer"
+        android:title="Historial"
+        android:icon="@drawable/ic_history_black_24dp"
+        />
+
+    <item android:id="@+id/opcion_pedido_drawer"
+        android:title="Pedidos"
+        android:icon="@drawable/ic_drive_eta_black_24dp"/>
+
+    <item android:title="Perfil">
+        <menu>
+            <item
+                android:id="@+id/opcion_cerrar_sesion_drawer"
+                android:title="Cerrar Sesion"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"/>
+        </menu>
+    </item>
+</menu>

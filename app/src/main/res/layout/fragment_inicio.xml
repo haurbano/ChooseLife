@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.profesional.chooselife.fragments.InicioFragment">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:layout_marginBottom="15dp"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        app:theme="@style/ButtonAccent"
+        android:id="@+id/btn_pedir_consuctor"
+        android:layout_height="wrap_content"
+        android:text="Solicitar Conductor"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"/>
+
+</RelativeLayout>
