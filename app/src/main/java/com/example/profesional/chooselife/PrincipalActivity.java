@@ -1,5 +1,6 @@
 package com.example.profesional.chooselife;
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.net.Uri;
 import android.support.design.widget.NavigationView;
@@ -90,7 +91,8 @@ public class PrincipalActivity extends AppCompatActivity implements NavigationVi
                 replaceFragment(pedidosFragment);
                 break;
             case R.id.opcion_cerrar_sesion_drawer:
-                replaceFragment(pedidosFragment);
+                Intent intent = new Intent(this,MainActivity.class);
+                startActivity(intent);
                 break;
         }
         drawer.closeDrawers();

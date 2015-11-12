@@ -1,5 +1,6 @@
 package com.example.profesional.chooselife.adapters;
 
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
@@ -22,7 +23,8 @@ public class AdapterPager extends FragmentStatePagerAdapter{
 
     @Override
     public Fragment getItem(int position) {
-        return data.get(position);
+        Fragment fragment = data.get(position);
+        return fragment;
     }
 
     @Override

@@ -52,10 +52,8 @@ public class PedidosFragment extends Fragment {
         data.add(confirmadoFragment);
         data.add(sinConfirmarFragment);
 
-        AdapterPager adapter = new AdapterPager(getFragmentManager(),data);
+        AdapterPager adapter = new AdapterPager(getChildFragmentManager(),data);
 
         pager.setAdapter(adapter);
     }
-
-
 }

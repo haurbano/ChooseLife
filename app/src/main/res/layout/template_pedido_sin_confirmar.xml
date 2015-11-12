@@ -5,7 +5,8 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardElevation="10dp"
-    android:layout_margin="@dimen/margin_small">
+    android:layout_margin="@dimen/margin_small"
+    >
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -104,14 +105,14 @@
             android:drawablePadding="@dimen/margin_medium"/>
 
         <Button
-            app:theme="@style/ButtonAccentDark"
+            app:theme="@style/ButtonAccent"
             android:id="@+id/btn_editar_pedido"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/txt_carro"
             android:layout_toLeftOf="@id/btn_cancelar_pedido"
             android:text="Editar"
-            android:drawableLeft="@drawable/ic_edit_white_24"
+            android:drawableLeft="@drawable/ic_edit_24"
             android:drawablePadding="@dimen/margin_medium"/>
 
     </RelativeLayout>

@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context="com.example.profesional.chooselife.PedirActivity"
     android:orientation="vertical"
-    android:layout_margin="15dp">
+    android:padding="15dp"
+    >
 
     <LinearLayout
         android:gravity="center"
@@ -60,6 +61,90 @@
                 android:hint="Telefono"
                 android:textColorHint="#ffffff"
                 android:inputType="number"
+                />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_drive_eta_black_24dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_pedir_marca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Marca"
+                android:textColorHint="#ffffff"
+                android:inputType="text"
+                />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_drive_eta_black_24dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_pedir_modelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Modelo (Año)"
+                android:textColorHint="#ffffff"
+                android:inputType="number"
+                />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_drive_eta_black_24dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_pedir_placa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Placa"
+                android:textColorHint="#ffffff"
+                android:inputType="text"
                 />
         </android.support.design.widget.TextInputLayout>
     </LinearLayout>
@@ -149,6 +234,7 @@
         app:theme="@style/ButtonAccent"
         android:text="Solicitar Conductor"
         android:layout_margin="10dp"
-        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 </LinearLayout>

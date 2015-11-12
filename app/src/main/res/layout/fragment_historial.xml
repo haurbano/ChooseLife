@@ -1,6 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.profesional.chooselife.fragments.HistorialFragment"
     android:orientation="vertical">
 
@@ -9,16 +10,24 @@
         android:gravity="center"
         android:textSize="25sp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:textColor="#ffffff"
+        android:padding="@dimen/margin_small"/>
 
     <android.support.v4.view.ViewPager
         android:id="@+id/pager_historial"
         android:layout_height="match_parent"
-        android:layout_width="match_parent">
+        android:layout_width="match_parent"
+        >
 
         <android.support.v4.view.PagerTabStrip
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:background="@color/primary"
+            app:tabSelectedTextColor="#ffffff"
+
+            />
 
     </android.support.v4.view.ViewPager>
 

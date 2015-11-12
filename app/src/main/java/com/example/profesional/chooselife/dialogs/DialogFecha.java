@@ -30,7 +30,7 @@ public class DialogFecha extends DialogFragment implements DatePickerDialog.OnDa
         int año = c.get(Calendar.YEAR);
         int mes = c.get(Calendar.MONTH);
         int dia = c.get(Calendar.DAY_OF_MONTH);
-        return new DatePickerDialog(getActivity(), R.style.AppTheme,this,año,mes,dia);
+        return new DatePickerDialog(getActivity(),this,año,mes,dia);
     }
 
     @Override
