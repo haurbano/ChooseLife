@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.profesional.chooselife.db.Pedido;
 import com.example.profesional.chooselife.dialogs.DialogFecha;
@@ -77,6 +78,8 @@ public class PedirActivity extends AppCompatActivity {
 
         SugarContext.init(this);
         pedido.save();
+
+        Toast.makeText(this,"Pedido realizado",Toast.LENGTH_SHORT);
 
         Intent intent = new Intent(this,PrincipalActivity.class);
         startActivity(intent);

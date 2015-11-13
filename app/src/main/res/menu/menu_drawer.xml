@@ -4,14 +4,16 @@
         android:title="Inicio"
         android:icon="@drawable/ic_home_black_24dp"/>
 
-    <item android:id="@+id/opcino_historial_drawer"
-        android:title="Historial"
-        android:icon="@drawable/ic_history_black_24dp"
-        />
+
 
     <item android:id="@+id/opcion_pedido_drawer"
         android:title="Pedidos"
         android:icon="@drawable/ic_drive_eta_black_24dp"/>
+
+    <item android:id="@+id/opcino_historial_drawer"
+        android:title="Historial"
+        android:icon="@drawable/ic_history_black_24dp"
+        />
 
     <item android:title="Perfil">
         <menu>

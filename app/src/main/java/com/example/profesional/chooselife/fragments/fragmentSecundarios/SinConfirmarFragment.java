@@ -67,7 +67,7 @@ public class SinConfirmarFragment extends TitleFragment {
         data = pedido.listAll(Pedido.class);
         adapter = new AdapterSinConfirmar(data,getContext());
         adapter.notifyDataSetChanged();
-        //adapter.init(this);
+        adapter.init(this);
 
         if(data == null)
         {

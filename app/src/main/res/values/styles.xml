@@ -23,8 +23,8 @@
     </style>
 
     <style name="ButtonAccentDark" parent="Widget.AppCompat.Button">
-        <item name="colorControlHighlight">#434343</item>
-        <item name="colorButtonNormal">#5D5D5D</item>
+        <item name="colorControlHighlight">#5d5d5d</item>
+        <item name="colorButtonNormal">#c5c5c5</item>
         <item name="android:textColor">#ffffff</item>
     </style>
 

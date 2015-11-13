@@ -63,8 +63,6 @@ public class PrincipalActivity extends AppCompatActivity implements NavigationVi
 
         //inicializar fragment
         inicioFragment = new InicioFragment();
-        historialFragment = new HistorialFragment();
-        pedidosFragment = new PedidosFragment();
         replaceFragment(inicioFragment);
 
         //Colocar imagen a user
@@ -82,12 +80,15 @@ public class PrincipalActivity extends AppCompatActivity implements NavigationVi
     public boolean onNavigationItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.opcion_home_drawer:
+                inicioFragment = new InicioFragment();
                 replaceFragment(inicioFragment);
                 break;
             case R.id.opcino_historial_drawer:
+                historialFragment = new HistorialFragment();
                 replaceFragment(historialFragment);
                 break;
             case R.id.opcion_pedido_drawer:
+                pedidosFragment = new PedidosFragment();
                 replaceFragment(pedidosFragment);
                 break;
             case R.id.opcion_cerrar_sesion_drawer:

@@ -27,7 +27,7 @@
                     android:id="@+id/img_conductor2"
                     android:layout_width="140dp"
                     android:layout_height="200dp"
-                    android:src="@drawable/conductor3"
+                    android:src="@drawable/conductor1"
                     android:layout_marginRight="10dp"
                     android:scaleType="centerCrop"
                     android:layout_centerVertical="true"/>
@@ -286,7 +286,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="17 Noviembre 2015"
+                        android:text="15 Noviembre 2015"
                         android:textSize="@dimen/text_size"/>
 
                 </LinearLayout>
@@ -343,7 +343,7 @@
                 </LinearLayout>
 
                 <Button
-                    app:theme="@style/ButtonAccent"
+                    app:theme="@style/ButtonAccentDark"
                     android:id="@+id/btn_ver_posicion"
                     android:layout_height="wrap_content"
                     android:text="Ver ruta"
@@ -353,7 +353,6 @@
                     android:drawableLeft="@drawable/ic_recorrido_black_24"
                     android:drawablePadding="10dp"
                     android:layout_marginTop="@dimen/margin_small"
-                    android:clickable="false"
                     />
 
             </RelativeLayout>
@@ -461,7 +460,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="15 Noviembre 2015"
+                        android:text="18 Noviembre 2015"
                         android:textSize="@dimen/text_size"/>
 
                 </LinearLayout>
@@ -518,7 +517,7 @@
                 </LinearLayout>
 
                 <Button
-                    app:theme="@style/ButtonAccent"
+                    app:theme="@style/ButtonAccentDark"
                     android:id="@+id/btn_ver_posicion3"
                     android:layout_height="wrap_content"
                     android:text="Ver ruta"
@@ -528,7 +527,6 @@
                     android:drawableLeft="@drawable/ic_recorrido_black_24"
                     android:drawablePadding="10dp"
                     android:layout_marginTop="@dimen/margin_small"
-                    android:clickable="false"
                     />
 
             </RelativeLayout>

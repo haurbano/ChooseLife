@@ -57,13 +57,12 @@ public class AdapterSinConfirmar extends BaseAdapter implements View.OnClickList
             v= convertView;
 
         TextView dir,hora,fecha,carro;
-        Button edit, cancel;
+        Button cancel;
 
         dir = (TextView) v.findViewById(R.id.txt_localizacion);
         hora = (TextView) v.findViewById(R.id.txt_hora);
         fecha = (TextView) v.findViewById(R.id.txt_dia);
         carro = (TextView) v.findViewById(R.id.txt_carro);
-        edit = (Button) v.findViewById(R.id.btn_editar_pedido);
         cancel = (Button) v.findViewById(R.id.btn_cancelar_pedido);
 
         dir.setText(data.get(position).getDireccion());
@@ -74,7 +73,6 @@ public class AdapterSinConfirmar extends BaseAdapter implements View.OnClickList
         String dc = data.get(position).getMarca()+" "+data.get(position).getModelo()+" - "+data.get(position).getPlaca();
         carro.setText(dc);
 
-        edit.setOnClickListener(this);
         cancel.setOnClickListener(this);
 
         return v;
@@ -87,22 +85,15 @@ public class AdapterSinConfirmar extends BaseAdapter implements View.OnClickList
             case R.id.btn_cancelar_pedido:
                 eliminarPedido();
                 break;
-            case R.id.btn_editar_pedido:
-                editarPedido();
-                break;
         }
-    }
-
-    private void editarPedido() {
-
     }
 
     private void eliminarPedido() {
         SugarContext.init(context);
         Pedido pedido = data.get(pos);
         pedido.delete();
-        notifyDataSetChanged();
-        //sinConfirmarFragment.cargarPedidos();
+        //notifyDataSetChanged();
+        sinConfirmarFragment.cargarPedidos();
 
     }
 
