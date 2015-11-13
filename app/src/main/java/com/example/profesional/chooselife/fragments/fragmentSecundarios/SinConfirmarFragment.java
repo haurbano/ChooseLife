@@ -1,14 +1,17 @@
 package com.example.profesional.chooselife.fragments.fragmentSecundarios;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.app.Fragment;
+import android.support.design.widget.FloatingActionButton;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.profesional.chooselife.PedirActivity;
 import com.example.profesional.chooselife.R;
 import com.example.profesional.chooselife.adapters.AdapterSinConfirmar;
 import com.example.profesional.chooselife.db.Pedido;
@@ -21,7 +24,7 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class SinConfirmarFragment extends TitleFragment {
+public class SinConfirmarFragment extends TitleFragment implements View.OnClickListener {
 
     public static final String TITLE = "Sin Confirmar";
     List<Pedido> data;
@@ -29,6 +32,7 @@ public class SinConfirmarFragment extends TitleFragment {
     ListView list;
     TextView noHay;
     AdapterSinConfirmar adapter;
+    FloatingActionButton fab;
 
     public SinConfirmarFragment() {
         // Required empty public constructor
@@ -43,6 +47,9 @@ public class SinConfirmarFragment extends TitleFragment {
         data = new ArrayList<>();
         SugarContext.init(getContext());
         noHay = (TextView) v.findViewById(R.id.txt_no_pedidos);
+        fab = (FloatingActionButton) v.findViewById(R.id.fab_add_pedido);
+
+        fab.setOnClickListener(this);
 
         cargarPedidos();
 
@@ -77,5 +84,11 @@ public class SinConfirmarFragment extends TitleFragment {
         {
             list.setAdapter(adapter);
         }
+    }
+
+    @Override
+    public void onClick(View v) {
+        Intent intent = new Intent(getActivity(), PedirActivity.class);
+        startActivity(intent);
     }
 }
